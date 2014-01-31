@@ -6,17 +6,62 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BE178FBE189BCFAB0060662C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE76B9D1184AC9BD001E749D /* XCTest.framework */; };
+		BE178FBF189BCFAB0060662C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE76B9B2184AC9BD001E749D /* Foundation.framework */; };
+		BE178FC0189BCFAB0060662C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE76B9B6184AC9BD001E749D /* UIKit.framework */; };
+		BE178FCD189BD00B0060662C /* iOSxTDD.m in Sources */ = {isa = PBXBuildFile; fileRef = BE178FB3189BCF340060662C /* iOSxTDD.m */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		BE178FAF189BCF340060662C /* iOSxTDD-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSxTDD-Info.plist"; sourceTree = "<group>"; };
+		BE178FB1189BCF340060662C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BE178FB3189BCF340060662C /* iOSxTDD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSxTDD.m; sourceTree = "<group>"; };
+		BE178FB5189BCF340060662C /* iOSxTDD-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSxTDD-Prefix.pch"; sourceTree = "<group>"; };
+		BE178FBD189BCFAB0060662C /* iOSxTDD.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSxTDD.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE76B9B2184AC9BD001E749D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BE76B9B4184AC9BD001E749D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		BE76B9B6184AC9BD001E749D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BE76B9D1184AC9BD001E749D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFrameworksBuildPhase section */
+		BE178FBA189BCFAB0060662C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE178FBE189BCFAB0060662C /* XCTest.framework in Frameworks */,
+				BE178FC0189BCFAB0060662C /* UIKit.framework in Frameworks */,
+				BE178FBF189BCFAB0060662C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
+		BE178FAD189BCF340060662C /* iOSxTDD */ = {
+			isa = PBXGroup;
+			children = (
+				BE178FB3189BCF340060662C /* iOSxTDD.m */,
+				BE178FAE189BCF340060662C /* Supporting Files */,
+			);
+			path = iOSxTDD;
+			sourceTree = "<group>";
+		};
+		BE178FAE189BCF340060662C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE178FAF189BCF340060662C /* iOSxTDD-Info.plist */,
+				BE178FB0189BCF340060662C /* InfoPlist.strings */,
+				BE178FB5189BCF340060662C /* iOSxTDD-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		BE76B9A6184AC9BD001E749D = {
 			isa = PBXGroup;
 			children = (
+				BE178FAD189BCF340060662C /* iOSxTDD */,
 				BE76B9B1184AC9BD001E749D /* Frameworks */,
 				BE76B9B0184AC9BD001E749D /* Products */,
 			);
@@ -25,6 +70,7 @@
 		BE76B9B0184AC9BD001E749D /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				BE178FBD189BCFAB0060662C /* iOSxTDD.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -41,6 +87,26 @@
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE178FBC189BCFAB0060662C /* iOSxTDD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE178FCA189BCFAB0060662C /* Build configuration list for PBXNativeTarget "iOSxTDD" */;
+			buildPhases = (
+				BE178FB9189BCFAB0060662C /* Sources */,
+				BE178FBA189BCFAB0060662C /* Frameworks */,
+				BE178FBB189BCFAB0060662C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSxTDD;
+			productName = iOSxTDD;
+			productReference = BE178FBD189BCFAB0060662C /* iOSxTDD.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		BE76B9A7184AC9BD001E749D /* Project object */ = {
@@ -62,11 +128,82 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				BE178FBC189BCFAB0060662C /* iOSxTDD */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		BE178FBB189BCFAB0060662C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE178FB9189BCFAB0060662C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE178FCD189BD00B0060662C /* iOSxTDD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BE178FB0189BCF340060662C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE178FB1189BCF340060662C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		BE178FCB189BCFAB0060662C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSxTDD/iOSxTDD-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iOSxTDD/iOSxTDD-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BE178FCC189BCFAB0060662C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSxTDD/iOSxTDD-Prefix.pch";
+				INFOPLIST_FILE = "iOSxTDD/iOSxTDD-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		BE76B9DF184AC9BD001E749D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -142,6 +279,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BE178FCA189BCFAB0060662C /* Build configuration list for PBXNativeTarget "iOSxTDD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE178FCB189BCFAB0060662C /* Debug */,
+				BE178FCC189BCFAB0060662C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		BE76B9AA184AC9BD001E749D /* Build configuration list for PBXProject "iOSxTDD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
