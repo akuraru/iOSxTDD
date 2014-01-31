@@ -10,4 +10,7 @@
 
 @implementation FizzBuzz
 
+- (NSString *)at:(NSInteger)n {
+    return @"";
+}
 @end
