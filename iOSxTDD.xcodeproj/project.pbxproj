@@ -11,6 +11,7 @@
 		BE178FBF189BCFAB0060662C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE76B9B2184AC9BD001E749D /* Foundation.framework */; };
 		BE178FC0189BCFAB0060662C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE76B9B6184AC9BD001E749D /* UIKit.framework */; };
 		BE178FCD189BD00B0060662C /* iOSxTDD.m in Sources */ = {isa = PBXBuildFile; fileRef = BE178FB3189BCF340060662C /* iOSxTDD.m */; };
+		BE178FD0189BD8BA0060662C /* FizzBuzz.m in Sources */ = {isa = PBXBuildFile; fileRef = BE178FCF189BD8BA0060662C /* FizzBuzz.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		BE178FB3189BCF340060662C /* iOSxTDD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSxTDD.m; sourceTree = "<group>"; };
 		BE178FB5189BCF340060662C /* iOSxTDD-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSxTDD-Prefix.pch"; sourceTree = "<group>"; };
 		BE178FBD189BCFAB0060662C /* iOSxTDD.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSxTDD.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE178FCE189BD8BA0060662C /* FizzBuzz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FizzBuzz.h; sourceTree = "<group>"; };
+		BE178FCF189BD8BA0060662C /* FizzBuzz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizzBuzz.m; sourceTree = "<group>"; };
 		BE76B9B2184AC9BD001E749D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BE76B9B4184AC9BD001E749D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		BE76B9B6184AC9BD001E749D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -44,6 +47,8 @@
 			children = (
 				BE178FB3189BCF340060662C /* iOSxTDD.m */,
 				BE178FAE189BCF340060662C /* Supporting Files */,
+				BE178FCE189BD8BA0060662C /* FizzBuzz.h */,
+				BE178FCF189BD8BA0060662C /* FizzBuzz.m */,
 			);
 			path = iOSxTDD;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE178FCD189BD00B0060662C /* iOSxTDD.m in Sources */,
+				BE178FD0189BD8BA0060662C /* FizzBuzz.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
