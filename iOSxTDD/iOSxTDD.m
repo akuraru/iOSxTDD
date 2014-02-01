@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "FizzBuzz.h"
 
 @interface iOSxTDD : XCTestCase
 
@@ -14,7 +15,10 @@
 
 @implementation iOSxTDD
 
-- (void)testExample {
+- (void)test1 {
+    FizzBuzz *fizzBuzz = [[FizzBuzz alloc] init];
+    NSString *result = [fizzBuzz at:1];
+    XCTAssertEqualObjects(result, @"1", @"1を送ると文字列の1を返す");
 }
 
 @end
