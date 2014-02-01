@@ -11,6 +11,6 @@
 @implementation FizzBuzz
 
 - (NSString *)at:(NSInteger)n {
-    return @"1";
+    return !(n%15) ? @"FizzBuzz" : !(n%3) ? @"Fizz" : !(n%5) ? @"Buzz" : [@(n) stringValue];
 }
 @end
