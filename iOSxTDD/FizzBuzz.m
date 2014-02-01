@@ -11,6 +11,6 @@
 @implementation FizzBuzz
 
 - (NSString *)at:(NSInteger)n {
-    return @"";
+    return @"1";
 }
 @end
