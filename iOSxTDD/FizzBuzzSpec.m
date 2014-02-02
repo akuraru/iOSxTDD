@@ -18,5 +18,14 @@ context(@"FizzBuzz", ^{
     it(@"1", ^{
         [[[fizzBuzz at:1] should] equal:@"1"];
     });
+    it(@"3", ^{
+        [[[fizzBuzz at:3] should] equal:@"Fizz"];
+    });
+    it(@"5", ^{
+        [[[fizzBuzz at:5] should] equal:@"Buzz"];
+    });
+    it(@"15", ^{
+        [[[fizzBuzz at:15] should] equal:@"FizzBuzz"];
+    });
 });
 SPEC_END
