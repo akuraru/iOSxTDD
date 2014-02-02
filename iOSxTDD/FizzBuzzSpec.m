@@ -9,4 +9,7 @@
 #import "Kiwi.h"
 
 SPEC_BEGIN(FizzBuzzSpec)
+it(@"test test", ^{
+    fail(@"test failure");
+});
 SPEC_END
