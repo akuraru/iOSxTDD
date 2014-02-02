@@ -15,12 +15,6 @@
 
 @implementation iOSxTDD
 
-- (void)test1 {
-    FizzBuzz *fizzBuzz = [[FizzBuzz alloc] init];
-    NSString *result = [fizzBuzz at:1];
-    XCTAssertEqualObjects(result, @"1", @"1を送ると文字列の1を返す");
-}
-
 - (void)test3 {
     FizzBuzz *fizzBuzz = [[FizzBuzz alloc] init];
     NSString *result = [fizzBuzz at:3];

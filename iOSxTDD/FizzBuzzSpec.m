@@ -7,9 +7,16 @@
 //
 
 #import "Kiwi.h"
+#import "FizzBuzz.h"
 
 SPEC_BEGIN(FizzBuzzSpec)
-it(@"test test", ^{
-    fail(@"test failure");
+context(@"FizzBuzz", ^{
+    __block FizzBuzz *fizzBuzz;
+    beforeAll(^{
+        fizzBuzz = [[FizzBuzz alloc] init];
+    });
+    it(@"1", ^{
+        [[[fizzBuzz at:1] should] equal:@"1"];
+    });
 });
 SPEC_END
