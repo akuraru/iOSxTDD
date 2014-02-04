@@ -10,8 +10,8 @@
 		BE178FBE189BCFAB0060662C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE76B9D1184AC9BD001E749D /* XCTest.framework */; };
 		BE178FBF189BCFAB0060662C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE76B9B2184AC9BD001E749D /* Foundation.framework */; };
 		BE178FC0189BCFAB0060662C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE76B9B6184AC9BD001E749D /* UIKit.framework */; };
-		BE178FCD189BD00B0060662C /* iOSxTDD.m in Sources */ = {isa = PBXBuildFile; fileRef = BE178FB3189BCF340060662C /* iOSxTDD.m */; };
 		BE178FD0189BD8BA0060662C /* FizzBuzz.m in Sources */ = {isa = PBXBuildFile; fileRef = BE178FCF189BD8BA0060662C /* FizzBuzz.m */; };
+		BE178FD2189DE50F0060662C /* FizzBuzzSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BE178FD1189DE50F0060662C /* FizzBuzzSpec.m */; };
 		C95A4037B1F7411F955F074B /* libPods-iOSxTDD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1103710D879B434C9683BF70 /* libPods-iOSxTDD.a */; };
 /* End PBXBuildFile section */
 
@@ -19,11 +19,11 @@
 		1103710D879B434C9683BF70 /* libPods-iOSxTDD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSxTDD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE178FAF189BCF340060662C /* iOSxTDD-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSxTDD-Info.plist"; sourceTree = "<group>"; };
 		BE178FB1189BCF340060662C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		BE178FB3189BCF340060662C /* iOSxTDD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSxTDD.m; sourceTree = "<group>"; };
 		BE178FB5189BCF340060662C /* iOSxTDD-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSxTDD-Prefix.pch"; sourceTree = "<group>"; };
 		BE178FBD189BCFAB0060662C /* iOSxTDD.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSxTDD.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE178FCE189BD8BA0060662C /* FizzBuzz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FizzBuzz.h; sourceTree = "<group>"; };
 		BE178FCF189BD8BA0060662C /* FizzBuzz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizzBuzz.m; sourceTree = "<group>"; };
+		BE178FD1189DE50F0060662C /* FizzBuzzSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizzBuzzSpec.m; sourceTree = "<group>"; };
 		BE76B9B2184AC9BD001E749D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BE76B9B4184AC9BD001E749D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		BE76B9B6184AC9BD001E749D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -49,10 +49,10 @@
 		BE178FAD189BCF340060662C /* iOSxTDD */ = {
 			isa = PBXGroup;
 			children = (
-				BE178FB3189BCF340060662C /* iOSxTDD.m */,
 				BE178FAE189BCF340060662C /* Supporting Files */,
 				BE178FCE189BD8BA0060662C /* FizzBuzz.h */,
 				BE178FCF189BD8BA0060662C /* FizzBuzz.m */,
+				BE178FD1189DE50F0060662C /* FizzBuzzSpec.m */,
 			);
 			path = iOSxTDD;
 			sourceTree = "<group>";
@@ -194,8 +194,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE178FCD189BD00B0060662C /* iOSxTDD.m in Sources */,
 				BE178FD0189BD8BA0060662C /* FizzBuzz.m in Sources */,
+				BE178FD2189DE50F0060662C /* FizzBuzzSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
