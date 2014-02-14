@@ -7,80 +7,109 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BE178FBE189BCFAB0060662C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE76B9D1184AC9BD001E749D /* XCTest.framework */; };
-		BE178FBF189BCFAB0060662C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE76B9B2184AC9BD001E749D /* Foundation.framework */; };
-		BE178FC0189BCFAB0060662C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE76B9B6184AC9BD001E749D /* UIKit.framework */; };
-		BE178FD0189BD8BA0060662C /* FizzBuzz.m in Sources */ = {isa = PBXBuildFile; fileRef = BE178FCF189BD8BA0060662C /* FizzBuzz.m */; };
-		BE178FD2189DE50F0060662C /* FizzBuzzSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BE178FD1189DE50F0060662C /* FizzBuzzSpec.m */; };
-		C95A4037B1F7411F955F074B /* libPods-iOSxTDD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1103710D879B434C9683BF70 /* libPods-iOSxTDD.a */; };
+		39DAE0926A574ACDA05CF768 /* libPods-iOSxTDDTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB340E16CAE4BFD990DE6E4 /* libPods-iOSxTDDTests.a */; };
+		BEE0E0DE18AEDE950082DFBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE76B9B2184AC9BD001E749D /* Foundation.framework */; };
+		BEE0E0DF18AEDE950082DFBE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE76B9B4184AC9BD001E749D /* CoreGraphics.framework */; };
+		BEE0E0E018AEDE950082DFBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE76B9B6184AC9BD001E749D /* UIKit.framework */; };
+		BEE0E0E218AEDE950082DFBE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE0E0E118AEDE950082DFBE /* CoreData.framework */; };
+		BEE0E0E818AEDE950082DFBE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BEE0E0E618AEDE950082DFBE /* InfoPlist.strings */; };
+		BEE0E0EA18AEDE950082DFBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE0E0E918AEDE950082DFBE /* main.m */; };
+		BEE0E0EE18AEDE950082DFBE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE0E0ED18AEDE950082DFBE /* AppDelegate.m */; };
+		BEE0E0F018AEDE950082DFBE /* iOSxTDD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEE0E0EF18AEDE950082DFBE /* iOSxTDD.xcdatamodeld */; };
+		BEE0E0F218AEDE950082DFBE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEE0E0F118AEDE950082DFBE /* Images.xcassets */; };
+		BEE0E0F818AEDE950082DFBE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE76B9D1184AC9BD001E749D /* XCTest.framework */; };
+		BEE0E0F918AEDE950082DFBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE76B9B2184AC9BD001E749D /* Foundation.framework */; };
+		BEE0E0FA18AEDE950082DFBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE76B9B6184AC9BD001E749D /* UIKit.framework */; };
+		BEE0E0FB18AEDE950082DFBE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE0E0E118AEDE950082DFBE /* CoreData.framework */; };
+		BEE0E10318AEDE950082DFBE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BEE0E10118AEDE950082DFBE /* InfoPlist.strings */; };
+		BEE0E10518AEDE950082DFBE /* iOSxTDDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE0E10418AEDE950082DFBE /* iOSxTDDTests.m */; };
+		BEE0E10C18AEE1360082DFBE /* FizzBuzz.m in Sources */ = {isa = PBXBuildFile; fileRef = C87909A18794B326411BCA59 /* FizzBuzz.m */; };
+		BEE0E10D18AEE1360082DFBE /* FizzBuzzSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = C87902D8BDE224BB1E352EBE /* FizzBuzzSpec.m */; };
+		BEE0E10E18AEE1370082DFBE /* FizzBuzz.m in Sources */ = {isa = PBXBuildFile; fileRef = C87909A18794B326411BCA59 /* FizzBuzz.m */; };
+		BEE0E10F18AEE1370082DFBE /* FizzBuzzSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = C87902D8BDE224BB1E352EBE /* FizzBuzzSpec.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEE0E0FC18AEDE950082DFBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE76B9A7184AC9BD001E749D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEE0E0DC18AEDE940082DFBE;
+			remoteInfo = iOSxTDD;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1103710D879B434C9683BF70 /* libPods-iOSxTDD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSxTDD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE178FAF189BCF340060662C /* iOSxTDD-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSxTDD-Info.plist"; sourceTree = "<group>"; };
-		BE178FB1189BCF340060662C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		BE178FB5189BCF340060662C /* iOSxTDD-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSxTDD-Prefix.pch"; sourceTree = "<group>"; };
-		BE178FBD189BCFAB0060662C /* iOSxTDD.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSxTDD.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE178FCE189BD8BA0060662C /* FizzBuzz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FizzBuzz.h; sourceTree = "<group>"; };
-		BE178FCF189BD8BA0060662C /* FizzBuzz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizzBuzz.m; sourceTree = "<group>"; };
-		BE178FD1189DE50F0060662C /* FizzBuzzSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizzBuzzSpec.m; sourceTree = "<group>"; };
+		A663DC16BCB94D55A199B7AF /* Pods-iOSxTDDTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSxTDDTests.xcconfig"; path = "Pods/Pods-iOSxTDDTests.xcconfig"; sourceTree = "<group>"; };
 		BE76B9B2184AC9BD001E749D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BE76B9B4184AC9BD001E749D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		BE76B9B6184AC9BD001E749D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BE76B9D1184AC9BD001E749D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BEE0E0DD18AEDE940082DFBE /* iOSxTDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSxTDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEE0E0E118AEDE950082DFBE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BEE0E0E518AEDE950082DFBE /* iOSxTDD-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSxTDD-Info.plist"; sourceTree = "<group>"; };
+		BEE0E0E718AEDE950082DFBE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BEE0E0E918AEDE950082DFBE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BEE0E0EB18AEDE950082DFBE /* iOSxTDD-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSxTDD-Prefix.pch"; sourceTree = "<group>"; };
+		BEE0E0EC18AEDE950082DFBE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BEE0E0ED18AEDE950082DFBE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BEE0E0F118AEDE950082DFBE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BEE0E0F718AEDE950082DFBE /* iOSxTDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSxTDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEE0E10018AEDE950082DFBE /* iOSxTDDTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSxTDDTests-Info.plist"; sourceTree = "<group>"; };
+		BEE0E10218AEDE950082DFBE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BEE0E10418AEDE950082DFBE /* iOSxTDDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSxTDDTests.m; sourceTree = "<group>"; };
+		C87902D8BDE224BB1E352EBE /* FizzBuzzSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizzBuzzSpec.m; sourceTree = "<group>"; };
+		C879032AB19163299545F37A /* FizzBuzz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FizzBuzz.h; sourceTree = "<group>"; };
+		C87909A18794B326411BCA59 /* FizzBuzz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizzBuzz.m; sourceTree = "<group>"; };
+		DCB340E16CAE4BFD990DE6E4 /* libPods-iOSxTDDTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSxTDDTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6264E874404447392A2A80A /* Pods-iOSxTDD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSxTDD.xcconfig"; path = "Pods/Pods-iOSxTDD.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BE178FBA189BCFAB0060662C /* Frameworks */ = {
+		BEE0E0DA18AEDE940082DFBE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE178FBE189BCFAB0060662C /* XCTest.framework in Frameworks */,
-				BE178FC0189BCFAB0060662C /* UIKit.framework in Frameworks */,
-				BE178FBF189BCFAB0060662C /* Foundation.framework in Frameworks */,
-				C95A4037B1F7411F955F074B /* libPods-iOSxTDD.a in Frameworks */,
+				BEE0E0DF18AEDE950082DFBE /* CoreGraphics.framework in Frameworks */,
+				BEE0E0E218AEDE950082DFBE /* CoreData.framework in Frameworks */,
+				BEE0E0E018AEDE950082DFBE /* UIKit.framework in Frameworks */,
+				BEE0E0DE18AEDE950082DFBE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE0E0F418AEDE950082DFBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEE0E0F818AEDE950082DFBE /* XCTest.framework in Frameworks */,
+				BEE0E0FB18AEDE950082DFBE /* CoreData.framework in Frameworks */,
+				BEE0E0FA18AEDE950082DFBE /* UIKit.framework in Frameworks */,
+				BEE0E0F918AEDE950082DFBE /* Foundation.framework in Frameworks */,
+				39DAE0926A574ACDA05CF768 /* libPods-iOSxTDDTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BE178FAD189BCF340060662C /* iOSxTDD */ = {
-			isa = PBXGroup;
-			children = (
-				BE178FAE189BCF340060662C /* Supporting Files */,
-				BE178FCE189BD8BA0060662C /* FizzBuzz.h */,
-				BE178FCF189BD8BA0060662C /* FizzBuzz.m */,
-				BE178FD1189DE50F0060662C /* FizzBuzzSpec.m */,
-			);
-			path = iOSxTDD;
-			sourceTree = "<group>";
-		};
-		BE178FAE189BCF340060662C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				BE178FAF189BCF340060662C /* iOSxTDD-Info.plist */,
-				BE178FB0189BCF340060662C /* InfoPlist.strings */,
-				BE178FB5189BCF340060662C /* iOSxTDD-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		BE76B9A6184AC9BD001E749D = {
 			isa = PBXGroup;
 			children = (
-				BE178FAD189BCF340060662C /* iOSxTDD */,
+				BEE0E0E318AEDE950082DFBE /* iOSxTDD */,
+				BEE0E0FE18AEDE950082DFBE /* iOSxTDDTests */,
 				BE76B9B1184AC9BD001E749D /* Frameworks */,
 				BE76B9B0184AC9BD001E749D /* Products */,
 				F6264E874404447392A2A80A /* Pods-iOSxTDD.xcconfig */,
+				A663DC16BCB94D55A199B7AF /* Pods-iOSxTDDTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
 		BE76B9B0184AC9BD001E749D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BE178FBD189BCFAB0060662C /* iOSxTDD.xctest */,
+				BEE0E0DD18AEDE940082DFBE /* iOSxTDD.app */,
+				BEE0E0F718AEDE950082DFBE /* iOSxTDDTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,22 +122,66 @@
 				BE76B9B6184AC9BD001E749D /* UIKit.framework */,
 				BE76B9D1184AC9BD001E749D /* XCTest.framework */,
 				1103710D879B434C9683BF70 /* libPods-iOSxTDD.a */,
+				BEE0E0E118AEDE950082DFBE /* CoreData.framework */,
+				DCB340E16CAE4BFD990DE6E4 /* libPods-iOSxTDDTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEE0E0E318AEDE950082DFBE /* iOSxTDD */ = {
+			isa = PBXGroup;
+			children = (
+				BEE0E0EC18AEDE950082DFBE /* AppDelegate.h */,
+				BEE0E0ED18AEDE950082DFBE /* AppDelegate.m */,
+				BEE0E0F118AEDE950082DFBE /* Images.xcassets */,
+				BEE0E0EF18AEDE950082DFBE /* iOSxTDD.xcdatamodeld */,
+				BEE0E0E418AEDE950082DFBE /* Supporting Files */,
+				C87909A18794B326411BCA59 /* FizzBuzz.m */,
+				C879032AB19163299545F37A /* FizzBuzz.h */,
+			);
+			path = iOSxTDD;
+			sourceTree = "<group>";
+		};
+		BEE0E0E418AEDE950082DFBE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEE0E0E518AEDE950082DFBE /* iOSxTDD-Info.plist */,
+				BEE0E0E618AEDE950082DFBE /* InfoPlist.strings */,
+				BEE0E0E918AEDE950082DFBE /* main.m */,
+				BEE0E0EB18AEDE950082DFBE /* iOSxTDD-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEE0E0FE18AEDE950082DFBE /* iOSxTDDTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEE0E10418AEDE950082DFBE /* iOSxTDDTests.m */,
+				BEE0E0FF18AEDE950082DFBE /* Supporting Files */,
+				C87902D8BDE224BB1E352EBE /* FizzBuzzSpec.m */,
+			);
+			path = iOSxTDDTests;
+			sourceTree = "<group>";
+		};
+		BEE0E0FF18AEDE950082DFBE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEE0E10018AEDE950082DFBE /* iOSxTDDTests-Info.plist */,
+				BEE0E10118AEDE950082DFBE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BE178FBC189BCFAB0060662C /* iOSxTDD */ = {
+		BEE0E0DC18AEDE940082DFBE /* iOSxTDD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BE178FCA189BCFAB0060662C /* Build configuration list for PBXNativeTarget "iOSxTDD" */;
+			buildConfigurationList = BEE0E10618AEDE950082DFBE /* Build configuration list for PBXNativeTarget "iOSxTDD" */;
 			buildPhases = (
-				9D283BC41C0B403EABAA74A7 /* Check Pods Manifest.lock */,
-				BE178FB9189BCFAB0060662C /* Sources */,
-				BE178FBA189BCFAB0060662C /* Frameworks */,
-				BE178FBB189BCFAB0060662C /* Resources */,
-				DEE66AEF9881493AAB2DBC36 /* Copy Pods Resources */,
+				BEE0E0D918AEDE940082DFBE /* Sources */,
+				BEE0E0DA18AEDE940082DFBE /* Frameworks */,
+				BEE0E0DB18AEDE940082DFBE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -116,7 +189,27 @@
 			);
 			name = iOSxTDD;
 			productName = iOSxTDD;
-			productReference = BE178FBD189BCFAB0060662C /* iOSxTDD.xctest */;
+			productReference = BEE0E0DD18AEDE940082DFBE /* iOSxTDD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEE0E0F618AEDE950082DFBE /* iOSxTDDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEE0E10918AEDE950082DFBE /* Build configuration list for PBXNativeTarget "iOSxTDDTests" */;
+			buildPhases = (
+				0A89C3E483944A1DB77E50DC /* Check Pods Manifest.lock */,
+				BEE0E0F318AEDE950082DFBE /* Sources */,
+				BEE0E0F418AEDE950082DFBE /* Frameworks */,
+				BEE0E0F518AEDE950082DFBE /* Resources */,
+				34FAE514744D42C7B5A8E8D4 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEE0E0FD18AEDE950082DFBE /* PBXTargetDependency */,
+			);
+			name = iOSxTDDTests;
+			productName = iOSxTDDTests;
+			productReference = BEE0E0F718AEDE950082DFBE /* iOSxTDDTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -141,23 +234,34 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BE178FBC189BCFAB0060662C /* iOSxTDD */,
+				BEE0E0DC18AEDE940082DFBE /* iOSxTDD */,
+				BEE0E0F618AEDE950082DFBE /* iOSxTDDTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BE178FBB189BCFAB0060662C /* Resources */ = {
+		BEE0E0DB18AEDE940082DFBE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEE0E0E818AEDE950082DFBE /* InfoPlist.strings in Resources */,
+				BEE0E0F218AEDE950082DFBE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE0E0F518AEDE950082DFBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEE0E10318AEDE950082DFBE /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9D283BC41C0B403EABAA74A7 /* Check Pods Manifest.lock */ = {
+		0A89C3E483944A1DB77E50DC /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -172,7 +276,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		DEE66AEF9881493AAB2DBC36 /* Copy Pods Resources */ = {
+		34FAE514744D42C7B5A8E8D4 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -184,28 +288,57 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-iOSxTDD-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Pods-iOSxTDDTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BE178FB9189BCFAB0060662C /* Sources */ = {
+		BEE0E0D918AEDE940082DFBE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE178FD0189BD8BA0060662C /* FizzBuzz.m in Sources */,
-				BE178FD2189DE50F0060662C /* FizzBuzzSpec.m in Sources */,
+				BEE0E10F18AEE1370082DFBE /* FizzBuzzSpec.m in Sources */,
+				BEE0E0EE18AEDE950082DFBE /* AppDelegate.m in Sources */,
+				BEE0E0F018AEDE950082DFBE /* iOSxTDD.xcdatamodeld in Sources */,
+				BEE0E0EA18AEDE950082DFBE /* main.m in Sources */,
+				BEE0E10E18AEE1370082DFBE /* FizzBuzz.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE0E0F318AEDE950082DFBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEE0E10518AEDE950082DFBE /* iOSxTDDTests.m in Sources */,
+				BEE0E10C18AEE1360082DFBE /* FizzBuzz.m in Sources */,
+				BEE0E10D18AEE1360082DFBE /* FizzBuzzSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		BEE0E0FD18AEDE950082DFBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEE0E0DC18AEDE940082DFBE /* iOSxTDD */;
+			targetProxy = BEE0E0FC18AEDE950082DFBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		BE178FB0189BCF340060662C /* InfoPlist.strings */ = {
+		BEE0E0E618AEDE950082DFBE /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BE178FB1189BCF340060662C /* en */,
+				BEE0E0E718AEDE950082DFBE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BEE0E10118AEDE950082DFBE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEE0E10218AEDE950082DFBE /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -213,46 +346,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		BE178FCB189BCFAB0060662C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6264E874404447392A2A80A /* Pods-iOSxTDD.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iOSxTDD/iOSxTDD-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "iOSxTDD/iOSxTDD-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		BE178FCC189BCFAB0060662C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6264E874404447392A2A80A /* Pods-iOSxTDD.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iOSxTDD/iOSxTDD-Prefix.pch";
-				INFOPLIST_FILE = "iOSxTDD/iOSxTDD-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 		BE76B9DF184AC9BD001E749D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -325,18 +418,81 @@
 			};
 			name = Release;
 		};
+		BEE0E10718AEDE950082DFBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSxTDD/iOSxTDD-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iOSxTDD/iOSxTDD-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BEE0E10818AEDE950082DFBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSxTDD/iOSxTDD-Prefix.pch";
+				INFOPLIST_FILE = "iOSxTDD/iOSxTDD-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BEE0E10A18AEDE950082DFBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A663DC16BCB94D55A199B7AF /* Pods-iOSxTDDTests.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSxTDD/iOSxTDD-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iOSxTDDTests/iOSxTDDTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BEE0E10B18AEDE950082DFBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A663DC16BCB94D55A199B7AF /* Pods-iOSxTDDTests.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSxTDD/iOSxTDD-Prefix.pch";
+				INFOPLIST_FILE = "iOSxTDDTests/iOSxTDDTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BE178FCA189BCFAB0060662C /* Build configuration list for PBXNativeTarget "iOSxTDD" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BE178FCB189BCFAB0060662C /* Debug */,
-				BE178FCC189BCFAB0060662C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		BE76B9AA184AC9BD001E749D /* Build configuration list for PBXProject "iOSxTDD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -346,7 +502,36 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		BEE0E10618AEDE950082DFBE /* Build configuration list for PBXNativeTarget "iOSxTDD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEE0E10718AEDE950082DFBE /* Debug */,
+				BEE0E10818AEDE950082DFBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEE0E10918AEDE950082DFBE /* Build configuration list for PBXNativeTarget "iOSxTDDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEE0E10A18AEDE950082DFBE /* Debug */,
+				BEE0E10B18AEDE950082DFBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BEE0E0EF18AEDE950082DFBE /* iOSxTDD.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+			);
+			path = iOSxTDD.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BE76B9A7184AC9BD001E749D /* Project object */;
 }
