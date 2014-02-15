@@ -26,7 +26,6 @@
 		BEE0E10C18AEE1360082DFBE /* FizzBuzz.m in Sources */ = {isa = PBXBuildFile; fileRef = C87909A18794B326411BCA59 /* FizzBuzz.m */; };
 		BEE0E10D18AEE1360082DFBE /* FizzBuzzSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = C87902D8BDE224BB1E352EBE /* FizzBuzzSpec.m */; };
 		BEE0E10E18AEE1370082DFBE /* FizzBuzz.m in Sources */ = {isa = PBXBuildFile; fileRef = C87909A18794B326411BCA59 /* FizzBuzz.m */; };
-		BEE0E10F18AEE1370082DFBE /* FizzBuzzSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = C87902D8BDE224BB1E352EBE /* FizzBuzzSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -220,6 +219,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = akuraru;
+				TargetAttributes = {
+					BEE0E0F618AEDE950082DFBE = {
+						TestTargetID = BEE0E0DC18AEDE940082DFBE;
+					};
+				};
 			};
 			buildConfigurationList = BE76B9AA184AC9BD001E749D /* Build configuration list for PBXProject "iOSxTDD" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -298,7 +302,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEE0E10F18AEE1370082DFBE /* FizzBuzzSpec.m in Sources */,
 				BEE0E0EE18AEDE950082DFBE /* AppDelegate.m in Sources */,
 				BEE0E0F018AEDE950082DFBE /* iOSxTDD.xcdatamodeld in Sources */,
 				BEE0E0EA18AEDE950082DFBE /* main.m in Sources */,
@@ -455,6 +458,7 @@
 			baseConfigurationReference = A663DC16BCB94D55A199B7AF /* Pods-iOSxTDDTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iOSxTDD.app/iOSxTDD";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -468,6 +472,7 @@
 				);
 				INFOPLIST_FILE = "iOSxTDDTests/iOSxTDDTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -477,6 +482,7 @@
 			baseConfigurationReference = A663DC16BCB94D55A199B7AF /* Pods-iOSxTDDTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iOSxTDD.app/iOSxTDD";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -486,6 +492,7 @@
 				GCC_PREFIX_HEADER = "iOSxTDD/iOSxTDD-Prefix.pch";
 				INFOPLIST_FILE = "iOSxTDDTests/iOSxTDDTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
