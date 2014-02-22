@@ -22,7 +22,6 @@
 		BEE0E0FA18AEDE950082DFBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE76B9B6184AC9BD001E749D /* UIKit.framework */; };
 		BEE0E0FB18AEDE950082DFBE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE0E0E118AEDE950082DFBE /* CoreData.framework */; };
 		BEE0E10318AEDE950082DFBE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BEE0E10118AEDE950082DFBE /* InfoPlist.strings */; };
-		BEE0E10518AEDE950082DFBE /* iOSxTDDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE0E10418AEDE950082DFBE /* iOSxTDDTests.m */; };
 		BEE0E10C18AEE1360082DFBE /* FizzBuzz.m in Sources */ = {isa = PBXBuildFile; fileRef = C87909A18794B326411BCA59 /* FizzBuzz.m */; };
 		BEE0E10D18AEE1360082DFBE /* FizzBuzzSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = C87902D8BDE224BB1E352EBE /* FizzBuzzSpec.m */; };
 		BEE0E10E18AEE1370082DFBE /* FizzBuzz.m in Sources */ = {isa = PBXBuildFile; fileRef = C87909A18794B326411BCA59 /* FizzBuzz.m */; };
@@ -57,7 +56,6 @@
 		BEE0E0F718AEDE950082DFBE /* iOSxTDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSxTDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEE0E10018AEDE950082DFBE /* iOSxTDDTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSxTDDTests-Info.plist"; sourceTree = "<group>"; };
 		BEE0E10218AEDE950082DFBE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		BEE0E10418AEDE950082DFBE /* iOSxTDDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSxTDDTests.m; sourceTree = "<group>"; };
 		C87902D8BDE224BB1E352EBE /* FizzBuzzSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizzBuzzSpec.m; sourceTree = "<group>"; };
 		C879032AB19163299545F37A /* FizzBuzz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FizzBuzz.h; sourceTree = "<group>"; };
 		C87909A18794B326411BCA59 /* FizzBuzz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizzBuzz.m; sourceTree = "<group>"; };
@@ -155,7 +153,6 @@
 		BEE0E0FE18AEDE950082DFBE /* iOSxTDDTests */ = {
 			isa = PBXGroup;
 			children = (
-				BEE0E10418AEDE950082DFBE /* iOSxTDDTests.m */,
 				BEE0E0FF18AEDE950082DFBE /* Supporting Files */,
 				C87902D8BDE224BB1E352EBE /* FizzBuzzSpec.m */,
 			);
@@ -313,7 +310,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEE0E10518AEDE950082DFBE /* iOSxTDDTests.m in Sources */,
 				BEE0E10C18AEE1360082DFBE /* FizzBuzz.m in Sources */,
 				BEE0E10D18AEE1360082DFBE /* FizzBuzzSpec.m in Sources */,
 			);
