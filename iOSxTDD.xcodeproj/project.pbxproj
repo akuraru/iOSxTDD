@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		39DAE0926A574ACDA05CF768 /* libPods-iOSxTDDTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB340E16CAE4BFD990DE6E4 /* libPods-iOSxTDDTests.a */; };
+		BE297D2A18BCAA1B00B11B31 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE297D2918BCAA1B00B11B31 /* Storyboard.storyboard */; };
+		BE297D2D18BCAB4B00B11B31 /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE297D2C18BCAB4B00B11B31 /* AlertViewController.m */; };
 		BEE0E0DE18AEDE950082DFBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE76B9B2184AC9BD001E749D /* Foundation.framework */; };
 		BEE0E0DF18AEDE950082DFBE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE76B9B4184AC9BD001E749D /* CoreGraphics.framework */; };
 		BEE0E0E018AEDE950082DFBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE76B9B6184AC9BD001E749D /* UIKit.framework */; };
@@ -40,6 +42,9 @@
 /* Begin PBXFileReference section */
 		1103710D879B434C9683BF70 /* libPods-iOSxTDD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSxTDD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A663DC16BCB94D55A199B7AF /* Pods-iOSxTDDTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSxTDDTests.xcconfig"; path = "Pods/Pods-iOSxTDDTests.xcconfig"; sourceTree = "<group>"; };
+		BE297D2918BCAA1B00B11B31 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		BE297D2B18BCAB4B00B11B31 /* AlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewController.h; sourceTree = "<group>"; };
+		BE297D2C18BCAB4B00B11B31 /* AlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewController.m; sourceTree = "<group>"; };
 		BE76B9B2184AC9BD001E749D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BE76B9B4184AC9BD001E749D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		BE76B9B6184AC9BD001E749D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -135,6 +140,9 @@
 				BEE0E0E418AEDE950082DFBE /* Supporting Files */,
 				C87909A18794B326411BCA59 /* FizzBuzz.m */,
 				C879032AB19163299545F37A /* FizzBuzz.h */,
+				BE297D2918BCAA1B00B11B31 /* Storyboard.storyboard */,
+				BE297D2B18BCAB4B00B11B31 /* AlertViewController.h */,
+				BE297D2C18BCAB4B00B11B31 /* AlertViewController.m */,
 			);
 			path = iOSxTDD;
 			sourceTree = "<group>";
@@ -248,6 +256,7 @@
 			files = (
 				BEE0E0E818AEDE950082DFBE /* InfoPlist.strings in Resources */,
 				BEE0E0F218AEDE950082DFBE /* Images.xcassets in Resources */,
+				BE297D2A18BCAA1B00B11B31 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +310,7 @@
 			files = (
 				BEE0E0EE18AEDE950082DFBE /* AppDelegate.m in Sources */,
 				BEE0E0F018AEDE950082DFBE /* iOSxTDD.xcdatamodeld in Sources */,
+				BE297D2D18BCAB4B00B11B31 /* AlertViewController.m in Sources */,
 				BEE0E0EA18AEDE950082DFBE /* main.m in Sources */,
 				BEE0E10E18AEE1370082DFBE /* FizzBuzz.m in Sources */,
 			);
