@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		39DAE0926A574ACDA05CF768 /* libPods-iOSxTDDTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB340E16CAE4BFD990DE6E4 /* libPods-iOSxTDDTests.a */; };
+		BE0E61A418C181BA00557A9D /* AlertSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0E61A318C181BA00557A9D /* AlertSpec.m */; };
+		BE0E61A518C181E400557A9D /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE297D2C18BCAB4B00B11B31 /* AlertViewController.m */; };
 		BE297D2A18BCAA1B00B11B31 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE297D2918BCAA1B00B11B31 /* Storyboard.storyboard */; };
 		BE297D2D18BCAB4B00B11B31 /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE297D2C18BCAB4B00B11B31 /* AlertViewController.m */; };
 		BEE0E0DE18AEDE950082DFBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE76B9B2184AC9BD001E749D /* Foundation.framework */; };
@@ -42,6 +44,7 @@
 /* Begin PBXFileReference section */
 		1103710D879B434C9683BF70 /* libPods-iOSxTDD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSxTDD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A663DC16BCB94D55A199B7AF /* Pods-iOSxTDDTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSxTDDTests.xcconfig"; path = "Pods/Pods-iOSxTDDTests.xcconfig"; sourceTree = "<group>"; };
+		BE0E61A318C181BA00557A9D /* AlertSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertSpec.m; sourceTree = "<group>"; };
 		BE297D2918BCAA1B00B11B31 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		BE297D2B18BCAB4B00B11B31 /* AlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewController.h; sourceTree = "<group>"; };
 		BE297D2C18BCAB4B00B11B31 /* AlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewController.m; sourceTree = "<group>"; };
@@ -163,6 +166,7 @@
 			children = (
 				BEE0E0FF18AEDE950082DFBE /* Supporting Files */,
 				C87902D8BDE224BB1E352EBE /* FizzBuzzSpec.m */,
+				BE0E61A318C181BA00557A9D /* AlertSpec.m */,
 			);
 			path = iOSxTDDTests;
 			sourceTree = "<group>";
@@ -320,8 +324,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE0E61A418C181BA00557A9D /* AlertSpec.m in Sources */,
 				BEE0E10C18AEE1360082DFBE /* FizzBuzz.m in Sources */,
 				BEE0E10D18AEE1360082DFBE /* FizzBuzzSpec.m in Sources */,
+				BE0E61A518C181E400557A9D /* AlertViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
