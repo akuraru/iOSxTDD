@@ -17,6 +17,7 @@ describe(@"AlertViewController", ^{
             UIAlertView *mock = [UIAlertView nullMock];
             [UIAlertView stub:@selector(alloc) andReturn:mock];
             [[mock should] receive:@selector(show)];
+            [[mock should] receive:@selector(setTitle:) withArguments:@"title"];
             
             [controller showAlert:nil];
         });
@@ -26,6 +27,7 @@ describe(@"AlertViewController", ^{
             UIAlertView *mock = [UIAlertView nullMock];
             [UIAlertView stub:@selector(alloc) andReturn:mock];
             [[mock should] receive:@selector(show)];
+            [[mock should] receive:@selector(setTitle:) withArguments:@"pop view controller"];
             
             [controller popViewController:nil];
         });
