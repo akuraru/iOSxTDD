@@ -1,5 +1,6 @@
 #import "Kiwi.h"
 #import "AlertViewController.h"
+#import "AlertManager.h"
 
 @interface AlertViewController ()
 - (IBAction)showAlert:(id)sender;
@@ -14,12 +15,26 @@ describe(@"AlertViewController", ^{
     });
     describe(@"showAlert:", ^{
         it(@"receive show alertView", ^{
+            [[AlertManager should] receive:@selector(test)];
+            [controller showAlert:nil];
+        });
+    });
+    describe(@"popViewController:", ^{
+        it(@"receive show alertView", ^{
+            [[AlertManager should] receive:@selector(popViewController:)];
+            [controller popViewController:nil];
+        });
+    });
+});
+describe(@"AlertManager", ^{
+    describe(@"test", ^{
+        it(@"receive show alertView", ^{
             UIAlertView *mock = [UIAlertView nullMock];
             [UIAlertView stub:@selector(alloc) andReturn:mock];
             [[mock should] receive:@selector(initWithTitle:message:delegate:cancelButtonTitle:otherButtonTitles:) andReturn:mock];
             [[mock should] receive:@selector(show)];
             
-            [controller showAlert:nil];
+            [AlertManager test];
         });
     });
     describe(@"popViewController:", ^{
@@ -29,7 +44,7 @@ describe(@"AlertViewController", ^{
             [[mock should] receive:@selector(initWithTitle:message:delegate:cancelButtonTitle:otherButtonTitles:) andReturn:mock];
             [[mock should] receive:@selector(show)];
             
-            [controller popViewController:nil];
+            [AlertManager popViewController:nil];
         });
     });
 });
