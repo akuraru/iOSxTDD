@@ -24,6 +24,18 @@ describe(@"AlertViewController", ^{
             [[AlertManager should] receive:@selector(popViewController:)];
             [controller popViewController:nil];
         });
+        it(@"pop view controller", ^{
+            KWCaptureSpy *spy = [[AlertManager class] captureArgument:@selector(popViewController:) atIndex:0];
+            [controller popViewController:nil];
+            
+            void (^compelete)() = spy.argument;
+            
+            UINavigationController *navigation = [UINavigationController mock];
+            [[controller should] receive:@selector(navigationController) andReturn:navigation];
+            [[navigation should] receive:@selector(popToRootViewControllerAnimated:)];
+            
+            compelete();
+        });
     });
 });
 describe(@"AlertManager", ^{
