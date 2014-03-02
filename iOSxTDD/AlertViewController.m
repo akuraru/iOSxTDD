@@ -6,9 +6,8 @@
 //  Copyright (c) 2014年 akuraru. All rights reserved.
 //
 
-#import <Lambda-Alert/CCAlertView.h>
 #import "AlertViewController.h"
-
+#import "AlertManager.h"
 
 @interface AlertViewController () <UIAlertViewDelegate>
 
@@ -17,17 +16,12 @@
 @implementation AlertViewController
 
 - (IBAction)showAlert:(id)sender {
-    CCAlertView *alert = [[CCAlertView alloc] initWithTitle:@"title" message:@"message"];
-    [alert addButtonWithTitle:@"OK" block:nil];
-    [alert show];
+    [AlertManager test];
 }
 - (IBAction)popViewController:(id)sender {
     __weak typeof(self) this = self;
-    CCAlertView *alert = [[CCAlertView alloc] initWithTitle:@"pop view controller" message:nil];
-    [alert addButtonWithTitle:@"OK" block:^{
+    [AlertManager popViewController:^{
         [this.navigationController popToRootViewControllerAnimated:YES];
     }];
-    [alert addButtonWithTitle:@"Cancel" block:nil];
-    [alert show];
 }
 @end
