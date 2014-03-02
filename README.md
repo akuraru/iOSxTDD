@@ -18,3 +18,10 @@ Sample application of test driven ios development
 [iOSでTDDをしてみる-Kiwi-Asynchronous Testing編](http://qiita.com/akuraru/items/a9f2d4a64f6ad8c3b0de)
 
 [iOSでTDDをしてみる - コマンドライン編](http://qiita.com/akuraru/items/7e60c81f6e3b7f6947a4)
+
+[iOSでTDDをしてみる - Travis CI編](http://qiita.com/akuraru/items/7dc8e32ca0d6d20e73d9)
+
+[iOSでTDDをしてみる - UIAlertView編](http://qiita.com/akuraru/items/f865303680acb1bdb275)
+
+
+何かネタが有る人は手伝ってください。
