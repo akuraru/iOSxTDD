@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		308155D232C74B5784BDE97B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F282239885774187831E136F /* libPods.a */; };
 		39DAE0926A574ACDA05CF768 /* libPods-iOSxTDDTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB340E16CAE4BFD990DE6E4 /* libPods-iOSxTDDTests.a */; };
 		BE0E61A418C181BA00557A9D /* AlertSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0E61A318C181BA00557A9D /* AlertSpec.m */; };
 		BE0E61A518C181E400557A9D /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE297D2C18BCAB4B00B11B31 /* AlertViewController.m */; };
+		BE0E61A818C2ADCF00557A9D /* AlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0E61A718C2ADCF00557A9D /* AlertManager.m */; };
+		BE0E61A918C2D1FE00557A9D /* AlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0E61A718C2ADCF00557A9D /* AlertManager.m */; };
 		BE297D2A18BCAA1B00B11B31 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE297D2918BCAA1B00B11B31 /* Storyboard.storyboard */; };
 		BE297D2D18BCAB4B00B11B31 /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE297D2C18BCAB4B00B11B31 /* AlertViewController.m */; };
 		BEE0E0DE18AEDE950082DFBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE76B9B2184AC9BD001E749D /* Foundation.framework */; };
@@ -43,8 +46,11 @@
 
 /* Begin PBXFileReference section */
 		1103710D879B434C9683BF70 /* libPods-iOSxTDD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSxTDD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B3A68C45AA74A93927AE3B1 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		A663DC16BCB94D55A199B7AF /* Pods-iOSxTDDTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSxTDDTests.xcconfig"; path = "Pods/Pods-iOSxTDDTests.xcconfig"; sourceTree = "<group>"; };
 		BE0E61A318C181BA00557A9D /* AlertSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertSpec.m; sourceTree = "<group>"; };
+		BE0E61A618C2ADCF00557A9D /* AlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertManager.h; sourceTree = "<group>"; };
+		BE0E61A718C2ADCF00557A9D /* AlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertManager.m; sourceTree = "<group>"; };
 		BE297D2918BCAA1B00B11B31 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		BE297D2B18BCAB4B00B11B31 /* AlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewController.h; sourceTree = "<group>"; };
 		BE297D2C18BCAB4B00B11B31 /* AlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewController.m; sourceTree = "<group>"; };
@@ -68,6 +74,7 @@
 		C879032AB19163299545F37A /* FizzBuzz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FizzBuzz.h; sourceTree = "<group>"; };
 		C87909A18794B326411BCA59 /* FizzBuzz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizzBuzz.m; sourceTree = "<group>"; };
 		DCB340E16CAE4BFD990DE6E4 /* libPods-iOSxTDDTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSxTDDTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F282239885774187831E136F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6264E874404447392A2A80A /* Pods-iOSxTDD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSxTDD.xcconfig"; path = "Pods/Pods-iOSxTDD.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +87,7 @@
 				BEE0E0E218AEDE950082DFBE /* CoreData.framework in Frameworks */,
 				BEE0E0E018AEDE950082DFBE /* UIKit.framework in Frameworks */,
 				BEE0E0DE18AEDE950082DFBE /* Foundation.framework in Frameworks */,
+				308155D232C74B5784BDE97B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +115,7 @@
 				BE76B9B0184AC9BD001E749D /* Products */,
 				F6264E874404447392A2A80A /* Pods-iOSxTDD.xcconfig */,
 				A663DC16BCB94D55A199B7AF /* Pods-iOSxTDDTests.xcconfig */,
+				4B3A68C45AA74A93927AE3B1 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +138,7 @@
 				1103710D879B434C9683BF70 /* libPods-iOSxTDD.a */,
 				BEE0E0E118AEDE950082DFBE /* CoreData.framework */,
 				DCB340E16CAE4BFD990DE6E4 /* libPods-iOSxTDDTests.a */,
+				F282239885774187831E136F /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -146,6 +156,8 @@
 				BE297D2918BCAA1B00B11B31 /* Storyboard.storyboard */,
 				BE297D2B18BCAB4B00B11B31 /* AlertViewController.h */,
 				BE297D2C18BCAB4B00B11B31 /* AlertViewController.m */,
+				BE0E61A618C2ADCF00557A9D /* AlertManager.h */,
+				BE0E61A718C2ADCF00557A9D /* AlertManager.m */,
 			);
 			path = iOSxTDD;
 			sourceTree = "<group>";
@@ -187,9 +199,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEE0E10618AEDE950082DFBE /* Build configuration list for PBXNativeTarget "iOSxTDD" */;
 			buildPhases = (
+				F9D355701A734E8C879F895B /* Check Pods Manifest.lock */,
 				BEE0E0D918AEDE940082DFBE /* Sources */,
 				BEE0E0DA18AEDE940082DFBE /* Frameworks */,
 				BEE0E0DB18AEDE940082DFBE /* Resources */,
+				AC304A52BF664B008EDF8C81 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -305,6 +319,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Pods-iOSxTDDTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		AC304A52BF664B008EDF8C81 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9D355701A734E8C879F895B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -312,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE0E61A818C2ADCF00557A9D /* AlertManager.m in Sources */,
 				BEE0E0EE18AEDE950082DFBE /* AppDelegate.m in Sources */,
 				BEE0E0F018AEDE950082DFBE /* iOSxTDD.xcdatamodeld in Sources */,
 				BE297D2D18BCAB4B00B11B31 /* AlertViewController.m in Sources */,
@@ -326,6 +371,7 @@
 			files = (
 				BE0E61A418C181BA00557A9D /* AlertSpec.m in Sources */,
 				BEE0E10C18AEE1360082DFBE /* FizzBuzz.m in Sources */,
+				BE0E61A918C2D1FE00557A9D /* AlertManager.m in Sources */,
 				BEE0E10D18AEE1360082DFBE /* FizzBuzzSpec.m in Sources */,
 				BE0E61A518C181E400557A9D /* AlertViewController.m in Sources */,
 			);
@@ -435,6 +481,7 @@
 		};
 		BEE0E10718AEDE950082DFBE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B3A68C45AA74A93927AE3B1 /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -453,6 +500,7 @@
 		};
 		BEE0E10818AEDE950082DFBE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B3A68C45AA74A93927AE3B1 /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -485,6 +533,7 @@
 				INFOPLIST_FILE = "iOSxTDDTests/iOSxTDDTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -505,6 +554,7 @@
 				INFOPLIST_FILE = "iOSxTDDTests/iOSxTDDTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
