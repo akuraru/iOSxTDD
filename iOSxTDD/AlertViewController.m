@@ -6,7 +6,9 @@
 //  Copyright (c) 2014年 akuraru. All rights reserved.
 //
 
+#import <Lambda-Alert/CCAlertView.h>
 #import "AlertViewController.h"
+
 
 @interface AlertViewController () <UIAlertViewDelegate>
 
@@ -15,31 +17,17 @@
 @implementation AlertViewController
 
 - (IBAction)showAlert:(id)sender {
-    UIAlertView *alert = [[UIAlertView alloc] init];
-    alert.title = @"title";
-    alert.message = @"message";
-    [alert addButtonWithTitle:@"OK"];
-    alert.delegate = self;
-    alert.tag = 0;
+    CCAlertView *alert = [[CCAlertView alloc] initWithTitle:@"title" message:@"message"];
+    [alert addButtonWithTitle:@"OK" block:nil];
     [alert show];
-    
 }
 - (IBAction)popViewController:(id)sender {
-    UIAlertView *alert = [[UIAlertView alloc] init];
-    alert.title = @"pop view controller";
-    [alert addButtonWithTitle:@"OK"];
-    [alert addButtonWithTitle:@"Cancel"];
-    [alert setCancelButtonIndex:1];
-    alert.delegate = self;
-    alert.tag = 1;
+    __weak typeof(self) this = self;
+    CCAlertView *alert = [[CCAlertView alloc] initWithTitle:@"pop view controller" message:nil];
+    [alert addButtonWithTitle:@"OK" block:^{
+        [this.navigationController popToRootViewControllerAnimated:YES];
+    }];
+    [alert addButtonWithTitle:@"Cancel" block:nil];
     [alert show];
-}
-
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-    if (alertView.tag == 1) {
-        if (buttonIndex == 0) {
-            [self.navigationController popToRootViewControllerAnimated:YES];
-        }
-    }
 }
 @end
