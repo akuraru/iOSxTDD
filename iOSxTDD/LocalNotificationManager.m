@@ -11,5 +11,21 @@
 }
 + (void)reset {
     [[UIApplication sharedApplication] cancelAllLocalNotifications];
+
+    [self setupNext9];
+    [self setupAfter3days];
+    [self setupWhiteDay];
+}
+
++ (void)setupNext9 {
+
+}
+
++ (void)setupAfter3days {
+
+}
+
++ (void)setupWhiteDay {
+
 }
 @end
