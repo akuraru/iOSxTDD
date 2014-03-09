@@ -12,9 +12,11 @@
 + (void)reset {
     [[UIApplication sharedApplication] cancelAllLocalNotifications];
 
-    [self setupNext9];
-    [self setupAfter3days];
-    [self setupWhiteDay];
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"alerm"]) {
+        [self setupNext9];
+        [self setupAfter3days];
+        [self setupWhiteDay];
+    }
 }
 
 + (void)setupNext9 {
