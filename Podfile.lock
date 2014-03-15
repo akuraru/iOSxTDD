@@ -1,4 +1,5 @@
 PODS:
+  - AZDateBuilder (0.1)
   - Kiwi/ARC (2.2.3)
   - Kiwi/NonARC (2.2.3)
   - Kiwi/XCTest (2.2.3):
@@ -7,10 +8,12 @@ PODS:
   - Lambda-Alert (1.0.0)
 
 DEPENDENCIES:
+  - AZDateBuilder
   - Kiwi/XCTest
   - Lambda-Alert
 
 SPEC CHECKSUMS:
+  AZDateBuilder: aa442a142b170612c2ef36ea2aa44199345748a5
   Kiwi: 04c51e880831d291748ec702d42c4101f7eb95c9
   Lambda-Alert: 16cac975568b71cd2940df8ca9cadb87882baae2
 

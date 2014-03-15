@@ -1,5 +1,6 @@
 #import "Kiwi.h"
 #import "LocalNotificationManager.h"
+#import "NSDate+AZDateBuilder.h"
 
 
 @interface LocalNotificationManager ()
@@ -42,7 +43,16 @@ describe(@"LocalNotificationManager", ^{
             });
             context(@"receive Alert", ^{
                 __block NSMutableArray *notifications;
+                __block NSDate *date;
                 beforeEach(^{
+                    date = [NSDate AZ_dateByUnit:@{
+                        AZ_DateUnit.year : @2014,
+                        AZ_DateUnit.month : @3,
+                        AZ_DateUnit.day : @9,
+                        AZ_DateUnit.hour : @12,
+                    }];
+                    [NSDate stub:@selector(date) andReturn:date];
+                    
                     notifications = [NSMutableArray array];
                     [[application should] receive:@selector(cancelAllLocalNotifications)];
                     [application stub:@selector(scheduleLocalNotification:) withBlock:^id(NSArray *params) {
