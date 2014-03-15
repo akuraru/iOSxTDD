@@ -64,6 +64,34 @@ describe(@"LocalNotificationManager", ^{
                 it(@"count", ^{
                     [[theValue(notifications.count) should] equal:theValue(3)];
                 });
+                it(@"scheduled local notification", ^{
+                    for (UILocalNotification *n in notifications) {
+                        if ([n.alertBody isEqualToString:@"9時になりました"]) {
+                            [[n.fireDate should] equal:[NSDate AZ_dateByUnit:@{
+                                AZ_DateUnit.year : @2014,
+                                AZ_DateUnit.month : @3,
+                                AZ_DateUnit.day : @10,
+                                AZ_DateUnit.hour : @9,
+                            }]];
+                        } else if ([n.alertBody isEqualToString:@"3日経ちました"]) {
+                            [[n.fireDate should] equal:[NSDate AZ_dateByUnit:@{
+                                AZ_DateUnit.year : @2014,
+                                AZ_DateUnit.month : @3,
+                                AZ_DateUnit.day : @12,
+                                AZ_DateUnit.hour : @12,
+                            }]];
+                        } else if ([n.alertBody isEqualToString:@"明日はホワイトデー"]) {
+                            [[n.fireDate should] equal:[NSDate AZ_dateByUnit:@{
+                                AZ_DateUnit.year : @2014,
+                                AZ_DateUnit.month : @3,
+                                AZ_DateUnit.day : @13,
+                                AZ_DateUnit.hour : @9,
+                            }]];
+                        } else {
+                            fail(@"not contein alertBody : %@", n);
+                        }
+                    }
+                });
             });
         });
     });

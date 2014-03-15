@@ -4,6 +4,7 @@
 //
 
 #import "LocalNotificationManager.h"
+#import "NSDate+AZDateBuilder.h"
 
 
 @implementation LocalNotificationManager {
@@ -20,15 +21,22 @@
 }
 
 + (void)setupNext9 {
-    [self localNotificationForBody:@"" fireDate:[NSDate date]];
+    [self localNotificationForBody:@"9時になりました" fireDate:[[[NSDate date] dateByAddingTimeInterval:24 * 60 *60]AZ_dateByUnit:@{
+        AZ_DateUnit.hour : @9,
+    }]];
 }
 
 + (void)setupAfter3days {
-    [self localNotificationForBody:@"" fireDate:[NSDate date]];
+    [self localNotificationForBody:@"3日経ちました" fireDate:[[NSDate date] dateByAddingTimeInterval:3 * 24 * 60 *60]];
 }
 
 + (void)setupWhiteDay {
-    [self localNotificationForBody:@"" fireDate:[NSDate date]];
+    [self localNotificationForBody:@"明日はホワイトデー" fireDate:[NSDate AZ_dateByUnit:@{
+        AZ_DateUnit.year : @2014,
+        AZ_DateUnit.month : @3,
+        AZ_DateUnit.day : @13,
+        AZ_DateUnit.hour : @9,
+    }]];
 }
 
 + (void)localNotificationForBody:(NSString *)body fireDate:(NSDate *)fireDate {
