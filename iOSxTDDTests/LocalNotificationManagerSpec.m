@@ -40,6 +40,21 @@ describe(@"LocalNotificationManager", ^{
                     [LocalNotificationManager reset];
                 });
             });
+            context(@"receive Alert", ^{
+                __block NSMutableArray *notifications;
+                beforeEach(^{
+                    notifications = [NSMutableArray array];
+                    [[application should] receive:@selector(cancelAllLocalNotifications)];
+                    [application stub:@selector(scheduleLocalNotification:) withBlock:^id(NSArray *params) {
+                        [notifications addObject:params[0]];
+                        return nil;
+                    }];
+                    [LocalNotificationManager reset];
+                });
+                it(@"count", ^{
+                    [[theValue(notifications.count) should] equal:theValue(3)];
+                });
+            });
         });
     });
 });

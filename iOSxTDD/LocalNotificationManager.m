@@ -20,14 +20,21 @@
 }
 
 + (void)setupNext9 {
-
+    [self localNotificationForBody:@"" fireDate:[NSDate date]];
 }
 
 + (void)setupAfter3days {
-
+    [self localNotificationForBody:@"" fireDate:[NSDate date]];
 }
 
 + (void)setupWhiteDay {
+    [self localNotificationForBody:@"" fireDate:[NSDate date]];
+}
 
++ (void)localNotificationForBody:(NSString *)body fireDate:(NSDate *)fireDate {
+    UILocalNotification *notification = [[UILocalNotification alloc] init];
+    notification.fireDate = fireDate;
+    notification.alertBody = body;
+    [[UIApplication sharedApplication] scheduleLocalNotification:notification];
 }
 @end
