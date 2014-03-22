@@ -23,5 +23,9 @@ Sample application of test driven ios development
 
 [iOSでTDDをしてみる - UIAlertView編](http://qiita.com/akuraru/items/f865303680acb1bdb275)
 
+[iOSでTDDをしてみる - UILocalNotification編](http://qiita.com/akuraru/items/e734dd84412c38d9aade)
+
+[iOSでTDDをしてみる - Guard編](http://qiita.com/akuraru/items/7caf0709fbedbc95fbd7)
+
 
 何かネタが有る人は手伝ってください。
