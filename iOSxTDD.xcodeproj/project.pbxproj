@@ -32,6 +32,7 @@
 		C87900B7473EBB8C00ACE8CB /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8790CFADFFF47C8A9936EB6 /* AlertViewController.m */; };
 		C879022E23907615575A4C8D /* LocalNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C8790DD5DBCF460EF4CC92B1 /* LocalNotificationManager.m */; };
 		C879029F7668F35F3C75A359 /* FizzBuzz.m in Sources */ = {isa = PBXBuildFile; fileRef = C879052C5B1031054CA1980C /* FizzBuzz.m */; };
+		C87904B3F3E37A0782DF4825 /* CoreDataSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = C87908801E6CA20469A1A57A /* CoreDataSpec.m */; };
 		C87904FF7E2A5866A7B3D5B1 /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8790CFADFFF47C8A9936EB6 /* AlertViewController.m */; };
 		C87907B990E891E5E19211C2 /* _Item.m in Sources */ = {isa = PBXBuildFile; fileRef = C8790014E41AAFECB930C6AA /* _Item.m */; };
 		C879099A73C21BA35061C5E6 /* AlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C8790A01034EBD6F03573401 /* AlertManager.m */; };
@@ -76,6 +77,7 @@
 		C87902D8BDE224BB1E352EBE /* FizzBuzzSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizzBuzzSpec.m; sourceTree = "<group>"; };
 		C879041A297917B0279AD44A /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		C879052C5B1031054CA1980C /* FizzBuzz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizzBuzz.m; sourceTree = "<group>"; };
+		C87908801E6CA20469A1A57A /* CoreDataSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataSpec.m; sourceTree = "<group>"; };
 		C87909ACB9473B8FA4B09A00 /* AlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewController.h; sourceTree = "<group>"; };
 		C87909D1F20F851083875B4A /* FizzBuzz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FizzBuzz.h; sourceTree = "<group>"; };
 		C8790A01034EBD6F03573401 /* AlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertManager.m; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				C87902D8BDE224BB1E352EBE /* FizzBuzzSpec.m */,
 				BE0E61A318C181BA00557A9D /* AlertSpec.m */,
 				C8790EDFF5B8609023AC9F7A /* LocalNotificationManagerSpec.m */,
+				C87908801E6CA20469A1A57A /* CoreDataSpec.m */,
 			);
 			path = iOSxTDDTests;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 				C87904FF7E2A5866A7B3D5B1 /* AlertViewController.m in Sources */,
 				C879029F7668F35F3C75A359 /* FizzBuzz.m in Sources */,
 				BEE2ADC818DD9F2B004AE2FE /* _Item.m in Sources */,
+				C87904B3F3E37A0782DF4825 /* CoreDataSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
