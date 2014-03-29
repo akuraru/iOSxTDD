@@ -1,20 +1,25 @@
 PODS:
   - AZDateBuilder (0.1)
-  - Kiwi/ARC (2.2.3)
-  - Kiwi/NonARC (2.2.3)
-  - Kiwi/XCTest (2.2.3):
+  - Kiwi/ARC (2.2.4)
+  - Kiwi/NonARC (2.2.4)
+  - Kiwi/XCTest (2.2.4):
     - Kiwi/ARC
     - Kiwi/NonARC
   - Lambda-Alert (1.0.0)
+  - MagicalRecord (2.2):
+    - MagicalRecord/Core
+  - MagicalRecord/Core (2.2)
 
 DEPENDENCIES:
   - AZDateBuilder
   - Kiwi/XCTest
   - Lambda-Alert
+  - MagicalRecord
 
 SPEC CHECKSUMS:
   AZDateBuilder: aa442a142b170612c2ef36ea2aa44199345748a5
-  Kiwi: 04c51e880831d291748ec702d42c4101f7eb95c9
+  Kiwi: d60d7498b640a16f58b01925fc3c8d7c4d809f66
   Lambda-Alert: 16cac975568b71cd2940df8ca9cadb87882baae2
+  MagicalRecord: 95d49d74ef752cd52f6ad87bcb474817fc3978cf
 
 COCOAPODS: 0.29.0
